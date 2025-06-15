@@ -1,0 +1,164 @@
+/*==================================
+  Detail Game Page Styles
+====================================*/
+body {
+    background-color: #1b2838;
+}
+
+.spad {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Hero Section */
+.game-detail-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center 30%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #1b2838 10%, rgba(27, 40, 56, 0.7) 50%, rgba(27, 40, 56, 0) 100%);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px;
+}
+
+.hero-game-info .game-category {
+    background-color: rgba(102, 192, 244, 0.2);
+    color: #66c0f4;
+    padding: 5px 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-game-info .game-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.price-and-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.game-price {
+    background-color: rgba(0,0,0,0.4);
+    color: #4dffaf;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn-add-to-cart {
+    background: linear-gradient(to right, #75b022, #588a1b);
+    color: white !important;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background: linear-gradient(to right, #8ed629, #6aa420);
+    transform: translateY(-2px);
+}
+.btn-add-to-cart i {
+    margin-right: 8px;
+}
+
+/* Content Section */
+.game-detail-content {
+    background-color: #1b2838;
+}
+
+.game-description h3, .game-specifications h3, .section-title-new {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.game-description p {
+    color: #c7d5e0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.game-specifications {
+    margin-top: 40px;
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.spec-item {
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.spec-item i {
+    font-size: 24px;
+    color: #66c0f4;
+}
+
+.spec-item strong {
+    display: block;
+    color: #a0a7b8;
+    font-size: 14px;
+}
+.spec-item span {
+    color: #c7d5e0;
+    font-weight: 600;
+}
+
+.game-main-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Related Products */
+.related-products-section {
+    background-color: #16181a;
+    padding-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .game-detail-hero { height: auto; padding-top: 100px; }
+    .hero-container { padding-bottom: 20px; }
+    .hero-game-info .game-title { font-size: 36px; }
+    .price-and-cart { flex-direction: column; align-items: flex-start; }
+    .spec-grid { grid-template-columns: 1fr; }
+    .game-main-image { margin-top: 30px; }
+}
